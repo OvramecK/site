@@ -1,0 +1,123 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+label {
+    cursor: pointer;
+}
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+/*main*/
+.wrapper {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    background: burlywood;
+    position: relative;
+    border: 4px solid purple;
+    text-align: center;
+}
+form {
+    margin: 50px auto;
+    padding:20px ;
+    border-radius: 20px;
+    background-color: lightblue;
+}
+form>div{
+    margin: 100px auto;
+    text-align: center;
+}
+textarea {
+    width: 300px;
+    height: 200px;
+    transition: all 2s ease;
+}
+textarea:hover {
+    background: azure;
+}
+textarea:focus{
+    background: azure;
+}
+button {
+    padding: 50px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]+label {
+    padding: 50px 0 50px 150px;
+    position: relative;
+}
+input[type="checkbox"]+label:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    height: 60px;
+    border: 2px solid gray;
+    border-radius: 30px;
+    background: green;
+    transition: all 2s linear;
+}
+input[type="checkbox"]+label:after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 40px;
+    height: 20px;
+    border: 1px solid lightgray;
+    background: orange;
+    transition: all 2s linear;
+}
+input[type="checkbox"]:checked+label:before{
+    background: blueviolet;
+    border-color: blueviolet;
+}
+input[type="checkbox"]:checked+label:after {
+    transform: translateX(90px);
+}
+
+.some_menu {
+    position: relative;
+    width: 100px;
+}
+.some_menu:after{
+    content: "";
+    position: absolute;
+
+}
+p{
+    padding: 10px;
+}
